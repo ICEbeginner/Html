@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clearfix{
+    clear: both;
+}
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Baloo', cursive;
+    background: linear-gradient(to left,#8942a8,#ba382f) no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.menubar{
+    background: linear-gradient(to left,#ba382f,#8942a8);
+    width: 100%;
+}
+.menubar .menu{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+.menubar .menu li{
+    list-style: none;
+    position: relative;
+    padding: 15px 15px;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+.menubar .menu li:hover{
+    background: #333;
+}
+.menubar .menu li:last-child{
+    border-right:none;
+}
+.menubar .menu li a{
+    text-decoration: none;
+    padding:0 20px;
+    color: #fff;
+}
+.menubar .menu .subm ul{
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background: #333;
+    display: block;
+    width: 200px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.menubar .menu li:hover .subm ul{
+    opacity: .8;
+    visibility: visible;
+    background: linear-gradient(#ba382f,#ba302f,#8942a8);
+
+}
+.menubar .menu .subm ul li{
+    text-align: center;
+    border-right: none;
+    border-bottom: 1px solid rgba(0,100,0,.2);
+}
+@media (max-width:768px){
+    .menubar .menu{
+        display: block;
+    }
+    .menubar .menu li{
+        display: block;
+    }
+    .menubar .menu li .subm ul {
+        width: 100%;
+        z-index: 1;
+    }
+}
+.logo{
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.logo span{
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+}
+.logo .logo1{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+    position: relative;
+    animation: text 3s 1;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 6px rgba(16, 16, 16, 0.2),
+        1px 25px 6px rgba(16, 16, 16, 0.4),
+        1px 30px 6px rgba(16, 16, 16, 0.4);
+}
+.logo .logo2{
+    font-size: 30px;
+    font-weight: 350;
+    letter-spacing: 5px;
+    position: relative;
+    color:#8942a8;
+    text-shadow: 1px 1px 1px #5942a8,
+    1px 2px 1px #5942a8,
+    1px 3px 1px #5942a8,
+    1px 4px 1px #5942a8,
+    1px 5px 1px #5942a8,
+    1px 6px 1px #5942a8,
+    1px 7px 1px #5942a8,
+    1px 8px 1px #5942a8,
+    1px 9px 1px #5942a8,
+    1px 10px 1px #5942a8,
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 6px rgba(16, 16, 16, 0.2),
+        1px 25px 6px rgba(16, 16, 16, 0.4),
+        1px 30px 6px rgba(16, 16, 16, 0.4);
+        animation: text 3s 1;
+}
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: 0px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: 0px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: 0px;
+    }
+}
